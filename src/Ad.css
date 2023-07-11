@@ -1,0 +1,85 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .airplane {
+    position: relative; /* 設定相對位置 */
+    top: 100px; /* 初始位置為 0 */
+    left: 251px;; /* 初始位置為 0 */
+    width: 500px;
+    height: 500px;
+    transition: transform 3s ease-out, top 3s ease-out;
+  }
+  
+  .animate {
+    transform: scale(2);
+    top: -134px;
+  }
+
+.cloud {
+    position: absolute; /* 設定絕對位置 */
+    top: -100px; /* 初始位置為 0 */
+    left: 251px;; /* 初始位置為 0 */
+    transform: translate(-50%, -50%);
+    width: 562px;
+    height: 500px;
+    opacity: 0; /* 初始透明度為 0 */
+    transition: opacity 1s ease-out; /* 設定浮現的過渡效果 */
+    z-index: 3; /* 設定層級在 airplane 的後方 */
+  }
+  .cloudanimate {
+    transform: scale(2);
+    top: 100px;
+    opacity: 0.9; /* 設定透明度為 1，讓圖片漸漸浮現 */
+  }
+  .title1{
+    position: absolute;
+    top: 435px; /* 初始位置為 0 */
+    left: 188px;
+    font-size: 72px;
+    transform: translateX(-50%) rotate(-21deg);
+    animation-delay: 0.5s;
+
+  }
+  .title2{
+    position: absolute;
+    top: 496px;
+    left: 285px;
+    font-size: 72px;
+    animation-delay: 1.5s;
+
+
+  }
+  .title3{
+    position: absolute;
+    top: 436px;
+    left: 661px;
+    font-size: 109px;
+    animation-delay: 2.5s;
+
+  }
+  .discounttitle{
+    transform: scale(2);
+
+  }
+  .fade-in {
+    opacity: 0;
+    animation-name: fade;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+
+  

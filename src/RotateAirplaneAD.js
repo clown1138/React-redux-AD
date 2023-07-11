@@ -1,7 +1,7 @@
 import React, { useState,useEffect } from 'react';
-import Ad001 from './Ad001';
+import Ad002 from './Ad002';
 
-const RotateAD=()=> {
+const RotateAirplaneAD=()=> {
 
   return (
     <div
@@ -15,9 +15,9 @@ const RotateAD=()=> {
         height: '17800px', 
       }}
     > 
-      <Ad001/>
+      <Ad002/>
  
     </div>
   );
 }
-export default RotateAD;
+export default RotateAirplaneAD;
